@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/OvakK/Argo.git
     targetRevision: HEAD
-    path: .
+    path: /
   destination:
     server: http://kubernetes.default.svc
     namespace: myapp
