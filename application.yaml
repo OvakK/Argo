@@ -7,12 +7,13 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/OvakK/Argo.git
+    repoURL: https://github.com/OvakK/Argo
     targetRevision: HEAD
     path: dev
-  destination:
-    server: http://kubernetes.default.svc
+  destination: 
+    server: https://kubernetes.default.svc
     namespace: myapp
+
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
@@ -20,4 +21,3 @@ spec:
     automated:
       selfHeal: true
       prune: true
-
