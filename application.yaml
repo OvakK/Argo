@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/OvakK/Argo
+    repoURL: https://github.com/OvakK/Argo.git
     targetRevision: HEAD
     path: dev
   destination: 
