@@ -1,41 +1,21 @@
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
-
   name: HelloFlask
-
   labels:
-
     app: flask
-
 spec:
-
   replicas: 3
-
   selector:
-
     matchLabels:
-
       app: flask
-
   template:
-
     metadata:
-
       labels:
-
         app: flask
-
     spec:
-
       containers:
-
       - name: flask
-
         image: ovak/flask_app
-
         ports:
-
         - containerPort: 5000
